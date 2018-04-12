@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: .1rem; }
+
+html {
+  font-size: 16px; }
+
+body {
+  background-color: #fff; }
+
+.top_nav {
+  top: 2.5rem;
+  position: fixed;
+  z-index: 1000;
+  width: 100%; }
+
+#wrapper {
+  max-width: 64rem;
+  background-color: #fff;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative; }
+  #wrapper header {
+    background-color: #2c3dbe;
+    padding: 1.25rem 0;
+    height: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000; }
+    #wrapper header nav {
+      position: absolute;
+      top: 25%; }
+      #wrapper header nav .header-nav {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap; }
+        #wrapper header nav .header-nav .header-nav-item {
+          list-style-type: none;
+          text-transform: uppercase; }
+          #wrapper header nav .header-nav .header-nav-item:hover {
+            background-color: #fff;
+            border-radius: 2.5rem; }
+          #wrapper header nav .header-nav .header-nav-item:hover a {
+            color: #2c3dbe; }
+          #wrapper header nav .header-nav .header-nav-item a {
+            color: #fff;
+            text-decoration: none; }
+        #wrapper header nav .header-nav .header-nav-item:not(:last-child) {
+          padding: 0 1.85rem; }
+  #wrapper section {
+    min-height: 80.25rem; }
+    #wrapper section #content {
+      justify-content: flex-end;
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column; }
+      #wrapper section #content .page-description {
+        margin: 1.85rem;
+        padding: 3.125rem;
+        border: .5rem solid #e0e0dc; }
+        #wrapper section #content .page-description h1 {
+          font-size: 2rem; }
+        #wrapper section #content .page-description .page-description-content {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 1.5rem; }
+          #wrapper section #content .page-description .page-description-content .page-description-img {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url("../img/building.jpg");
+            height: 12.5rem;
+            width: 100%; }
+          #wrapper section #content .page-description .page-description-content .page-description-text {
+            margin: 0 0 0 2.5rem; }
+            #wrapper section #content .page-description .page-description-content .page-description-text p:not(:first-child) {
+              margin: 1.25rem 0; }
+    #wrapper section .visible-block {
+      max-width: 12.5rem;
+      max-height: 600px;
+      background-color: #bfc7ff;
+      padding: 1rem 0 1rem .5rem;
+      transition: all 1s; }
+      #wrapper section .visible-block .visible-block-item {
+        margin: 2rem 0; }
+  #wrapper footer {
+    width: 100%;
+    background-color: #333;
+    height: 1.875rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: #fff; }
+  #wrapper .aside-left {
+    left: 0; }
+  #wrapper .aside-right {
+    right: 0; }
+  #wrapper .aside-left, #wrapper .aside-right {
+    background-color: #fff;
+    width: 17.75rem;
+    float: left;
+    position: absolute;
+    top: 2.5rem;
+    height: 20%; }
+    #wrapper .aside-left .title-aside, #wrapper .aside-right .title-aside {
+      height: 20%;
+      padding: .5rem 0 0 .8rem; }
+    #wrapper .aside-left .aside-news, #wrapper .aside-right .aside-news {
+      display: flex;
+      height: 80%;
+      background-color: #a7a7a7;
+      justify-content: space-around;
+      flex-direction: column; }
+      #wrapper .aside-left .aside-news li, #wrapper .aside-right .aside-news li {
+        list-style-type: none;
+        padding: 0 .8rem;
+        font-size: 1.1rem; }
+        #wrapper .aside-left .aside-news li:before, #wrapper .aside-right .aside-news li:before {
+          content: "-"; }
